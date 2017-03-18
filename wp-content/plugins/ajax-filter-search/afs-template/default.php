@@ -6,11 +6,7 @@ if(FILTER_TYPE == '') {
 	$filter_type_count = count($filter_type_array);
 }
 ?>
-<div class="prDateCol col-sm-2">
-	<div class="visible-xs afs-Divider"></div>
-		<div class="afs-PRDate"><?php echo get_the_time('n/d/Y'); ?></div>
-		<div class="afs-PRTimezone"><span class="afs-PRTime"><?php echo get_the_time('g:i a'); ?></span><span class="afs-timezone">&nbsp;<?php echo get_the_time('T'); ?></span></div>
-   	</div>
+
 
 	<div class="col-sm-10">
 		<h6>
@@ -41,21 +37,20 @@ if(FILTER_TYPE == '') {
 			?>
 		</h6>
 		<?php the_post_thumbnail('medium' ); ?>
-		<h4><a href="<?php echo get_the_permalink(); ?>" class="afs-GaLabel afs-EventTracking afs-GaHasFile" data-GaFID="<?php echo get_the_ID(); ?>"><?php echo get_the_title(); ?></a></h4>
- 		<div class="prDateRow">
+		<div class="prDateRow">
       		<div class="afs-PRDate"><?php echo get_the_time('j F Y'); ?></div>
       	</div>
+		<h4><a href="<?php echo get_the_permalink(); ?>" class="afs-GaLabel afs-EventTracking afs-GaHasFile" data-GaFID="<?php echo get_the_ID(); ?>"><?php echo get_the_title(); ?></a></h4>
+ 		
    		<div class="afs-PRTools">
         	<?php 
 				$summary = get_the_selected_excerpt(200); 
 				if(get_the_selected_excerpt(200) == '') {
 				} else {
 			?>
-     		<ul>
-    			<li class="hideFromGrid last"><a class="showSummary" href="#"><span class="fa fa-plus-square"></span>&nbsp;Summary</a></li>
- 			</ul>
+     		
             <?php } ?>
-  			<div class="clearfix"></div>
+  			
     	</div>
 
  		<div class="afs-PRSummary afs-Hidden">

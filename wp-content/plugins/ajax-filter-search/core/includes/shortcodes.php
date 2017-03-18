@@ -240,11 +240,8 @@ function ajax_filter_search($atts, $content = null) {
 	$text .= '							<div class="row">';
 	
 	$text .= '								<div class="afs-Table col-xs-12" style="padding-left:0; padding-right:0;">';
-	$text .= '									<div class="afs-TableHeader col-sm-12 hidden-xs" style="padding-left: 0; padding-right: 0;">';
-	$text .= '										<div class="col-xs-2">Date</div>';
-	$text .= '										<div class="col-xs-10">Headline</div>';
-	$text .= '									</div>';
-	$text .= '									<div class="clearfix"></div>';
+	
+	
 	
 	
 	/****************************

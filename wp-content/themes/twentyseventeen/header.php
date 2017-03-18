@@ -29,6 +29,7 @@
 <?php wp_head(); ?>
 
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/menu.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/blog.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/media-query.css" type="text/css" media="screen" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 <script type="text/javascript">
@@ -126,6 +127,17 @@
 			'menu_id'        => 'top-menu',
 			) ); ?>
         </nav>
+        <script type="text/javascript">
+			jQuery(document).ready(function(){
+				jQuery('#top-menu li.menu-item-has-children').each(function(element){						
+					jQuery(this).children('a').first().after('<span class="plus"> </span>');
+				});
+
+				jQuery('#top-menu li.menu-item-has-children span.plus').click(function(e) {		
+					jQuery(this).toggleClass('active').siblings('ul').toggleClass('active');
+				});
+			});
+		</script>
     </div>
    
 </header><!-- #masthead -->

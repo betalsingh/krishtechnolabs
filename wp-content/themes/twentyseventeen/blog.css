@@ -1,1 +1,5 @@
-.page-insight .parallax-container {min-height: 340px;}
+.page-asdasdasd .site-content { padding:0;}
+.page-asdasdasd .parallax-container {min-height: 340px;}
+.page-asdasdasd .blog-header { font-size:72px; color:#fff; line-height:70px; text-align:center; width:100%; display:block;font-family: "Open Sans",sans-serif; font-weight:bold; color:#fff; position:absolute; z-index:3; top:25%;}
+.blog-custom-page { background:#efefef; float:left; width:100%;}
+.press-releases { width:1170px; margin:0 auto;}

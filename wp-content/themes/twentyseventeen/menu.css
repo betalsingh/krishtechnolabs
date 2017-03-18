@@ -30,6 +30,7 @@ a:hover:after, a.active:after {
 	transition-property:inherit;
 }
 
+.menu-top-menu-container span.plus { display:none;}
 
 header.global.desktop h2 {
     display: inline-block;
@@ -1083,9 +1084,9 @@ overflow: hidden;
 
 
 header.global.mobile nav ul { margin:0;}
-header.global.mobile nav ul > li {margin:0; padding:0;}
+header.global.mobile nav ul > li {margin:0; padding:0; border-bottom:1px solid #2a2a2a;}
 header.global.mobile nav ul > li a{margin:0; padding:10px 28px;}
-header.global.mobile nav ul > li a:hover{ background:#595959;}
+
 header.global .wrapper > nav ul > li.menu-item-has-children > ul { margin:0; display:block; padding:0 0 18px 0; position:relative; width:100%;box-shadow:inherit; background:none!important;}
 header.global .wrapper > nav ul > li.menu-item-has-children > ul > li { margin:0px; padding:0;}
 header.global .wrapper > nav ul > li.menu-item-has-children > ul > li a{ padding:6px 38px; line-height:24px; }
@@ -1093,6 +1094,26 @@ header.global .wrapper > nav ul > li.menu-item-has-children > ul > li a:hover{ p
 header.global .wrapper > nav ul > li.menu-item-has-children > ul > li > ul{ width:100%; left:0;}
 header.global .wrapper > nav ul > li.menu-item-has-children > ul > li > ul li a{ padding:6px 10px 6px 52px; line-height:24px; }
 header.global .wrapper > nav ul > li.menu-item-has-children > ul > li > ul li a:hover{ padding:6px 10px 6px 52px; }
+
+.menu-top-menu-container span.plus { 
+    display: block;
+    height: 32px;
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    width: 32px; cursor:pointer; text-align:center; 
+}
+.menu-top-menu-container span.plus:before {
+  content: "\e912"; color:#e3e3e3; font-size:16px; line-height:32px; text-align:center; font-family: "icomoon" !important;
+}
+.menu-top-menu-container span.plus.active:before {
+  content: ""; color:#e3e3e3; font-size:16px; line-height:32px; text-align:center; font-family: "icomoon" !important; width:16px; height:2px; background:#e3e3e3; float:left; margin:15px 0 0 8px;
+}
+
+header.global .wrapper > nav ul > li.menu-item-has-children > ul.sub-menu { display:none;}
+header.global .wrapper > nav ul > li.menu-item-has-children > ul.sub-menu.active { display:block;}
+header.global .wrapper > nav ul > li.menu-item-has-children > ul > li > a:hover { background:none;}
+
 }
 @media (max-width: 639px) {
 header.global.mobile h2 {

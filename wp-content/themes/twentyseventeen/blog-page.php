@@ -18,14 +18,15 @@
 			    
 			});
 		</script>		
-        <div class="parallax-container" style="background-image: url('<?php echo $thumb_url; ?>');">        	
+        <div class="parallax-container" style="background-image: url('<?php echo $thumb_url; ?>');">   
+        	<div class="blog-header">From Our Blog</div>		     	
 			<div class="breadcrumbs">
 				 <?php echo do_shortcode('[breadcrumb]' ); ?>
 			</div>			
         </div>
 	<?php endif; ?>
 			<div class="entry-content">
-            	<div class="inner-custom-page">
+            	<div class="blog-custom-page">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); 
                         the_content(); 
                         endwhile; 
