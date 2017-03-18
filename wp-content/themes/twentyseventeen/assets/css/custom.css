@@ -1,0 +1,53 @@
+/*wp-smiley img css. PATH:-wp-includes/formatting.php*/
+img.wp-smiley, img.emoji {display: inline !important; border: none !important; box-shadow: none !important; height: 1em !important; width: 1em !important; margin: 0 .07em !important; vertical-align: -0.1em !important; background: none !important; padding: 0 !important;}
+/*wp-includes/admin-bar.php  */
+
+/*pagebuilder css*/
+div#pg-391-1 .panel-grid-cell {
+    padding: 0;
+}
+
+/*Mganto landing page css  */
+.inner_banner {
+    float: left;
+    width: 100%;
+    margin: 73px 0 94px 0;
+}
+.title {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+
+}
+.inner-title {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}
+.inner-title.orange {
+
+    color: #ff5000;
+}
+.why_magento_container {
+    float: left;
+    width: 100%;
+    background: url(../images/why_magento.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 62px 0 0 0;
+    padding: 95px 0 55px 0;
+    box-sizing: border-box;
+}
+.why_magento_container .title-f {
+    color: #ffffff;
+}
+.inner-page .why_magento_container  p {
+    color: #ffffff;
+}
+.why_magento_container .title-f:before {
+   border-bottom: 1px solid #fff;
+}
+
+

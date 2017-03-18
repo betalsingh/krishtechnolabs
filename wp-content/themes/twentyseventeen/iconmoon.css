@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?vvb63m');
+  src:  url('fonts/icomoon.eot?vvb63m#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vvb63m') format('truetype'),
+    url('fonts/icomoon.woff?vvb63m') format('woff'),
+    url('fonts/icomoon.svg?vvb63m#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chair:before {
+  content: "\e900";
+}
+.icon-fashion:before {
+  content: "\e901";
+}
+.icon-transport:before {
+  content: "\e902";
+}
+.icon-groceries2:before {
+  content: "\e903";
+}
+.icon-diamond:before {
+  content: "\e904";
+}
+.icon-cosmetics:before {
+  content: "\e905";
+}
+.icon-mobile:before {
+  content: "\e906";
+}
+.icon-marketing:before {
+  content: "\e907";
+}
+.icon-tools2:before {
+  content: "\e908";
+}
+.icon-testing:before {
+  content: "\e909";
+}
+.icon-startup2:before {
+  content: "\e90a";
+}
+.icon-html:before {
+  content: "\e90b";
+}
+.icon-design-tool:before {
+  content: "\e90c";
+}
+.icon-communication:before {
+  content: "\e90d";
+}
+.icon-menu-icon:before {
+  content: "\e90e";
+}
+.icon-menu-close-icon:before {
+  content: "\e90f";
+}
+.icon-arrow-icon-f:before {
+  content: "\e910";
+}
+.icon-arrow-icon-v:before {
+  content: "\e911";
+}
+.icon-add:before {
+  content: "\e912";
+}
+.icon-equal:before {
+  content: "\e913";
+}
+.icon-tick-sign:before {
+  content: "\e914";
+}
+.icon-verification-mark:before {
+  content: "\e915";
+}
+.icon-up-arrow-round:before {
+  content: "\e916";
+}
+.icon-left-arrow-round:before {
+  content: "\e917";
+}
+.icon-right-arrow-round:before {
+  content: "\e918";
+}
+.icon-down-arrow-round:before {
+  content: "\e919";
+}
+.icon-arrow-down:before {
+  content: "\e91a";
+}
+.icon-up-arrow:before {
+  content: "\e91b";
+}
+.icon-left-arrow:before {
+  content: "\e91c";
+}
+.icon-right-arrow:before {
+  content: "\e91d";
+}
+.icon-508:before {
+  content: "\e91e";
+}
+.icon-analysis:before {
+  content: "\e91f";
+}
+.icon-approve:before {
+  content: "\e920";
+}
+.icon-big-diamond:before {
+  content: "\e921";
+}
+.icon-box:before {
+  content: "\e922";
+}
+.icon-bug:before {
+  content: "\e923";
+}
+.icon-calendar:before {
+  content: "\e924";
+}
+.icon-checked:before {
+  content: "\e925";
+}
+.icon-customization:before {
+  content: "\e926";
+}
+.icon-discuss-issue:before {
+  content: "\e927";
+}
+.icon-drawing:before {
+  content: "\e928";
+}
+.icon-dress:before {
+  content: "\e929";
+}
+.icon-email-attachment-interface-symbol:before {
+  content: "\e92a";
+}
+.icon-engineer:before {
+  content: "\e92b";
+}
+.icon-uniE92C:before {
+  content: "\e92c";
+}
+.icon-uniE92D:before {
+  content: "\e92d";
+}
+.icon-first-aid-kit:before {
+  content: "\e92e";
+}
+.icon-flasks:before {
+  content: "\e92f";
+}
+.icon-uniE930:before {
+  content: "\e930";
+}
+.icon-uniE931:before {
+  content: "\e931";
+}
+.icon-uniE932:before {
+  content: "\e932";
+}
+.icon-uniE933:before {
+  content: "\e933";
+}
+.icon-uniE934:before {
+  content: "\e934";
+}
+.icon-groceries:before {
+  content: "\e935";
+}
+.icon-heart-1:before {
+  content: "\e936";
+}
+.icon-uniE937:before {
+  content: "\e937";
+}
+.icon-uniE938:before {
+  content: "\e938";
+}
+.icon-laptop:before {
+  content: "\e939";
+}
+.icon-left-quote:before {
+  content: "\e93a";
+}
+.icon-lifesaver:before {
+  content: "\e93b";
+}
+.icon-line-graph:before {
+  content: "\e93c";
+}
+.icon-uniE93D:before {
+  content: "\e93d";
+}
+.icon-uniE93E:before {
+  content: "\e93e";
+}
+.icon-login:before {
+  content: "\e93f";
+}
+.icon-planet-earth:before {
+  content: "\e940";
+}
+.icon-quote-sign:before {
+  content: "\e941";
+}
+.icon-security:before {
+  content: "\e942";
+}
+.icon-shield:before {
+  content: "\e943";
+}
+.icon-social-media:before {
+  content: "\e944";
+}
+.icon-speech-bubble:before {
+  content: "\e945";
+}
+.icon-startup:before {
+  content: "\e946";
+}
+.icon-suitcase:before {
+  content: "\e947";
+}
+.icon-target:before {
+  content: "\e948";
+}
+.icon-telephone-auricular-with-cable:before {
+  content: "\e949";
+}
+.icon-ticket:before {
+  content: "\e94a";
+}
+.icon-tools:before {
+  content: "\e94b";
+}
+.icon-uniE94C:before {
+  content: "\e94c";
+}
+.icon-uniE94D:before {
+  content: "\e94d";
+}
+.icon-worker:before {
+  content: "\e94e";
+}
+.icon-left-arrow-thin:before {
+  content: "\e94f";
+}
+.icon-right-arrow-thin:before {
+  content: "\e950";
+}
+

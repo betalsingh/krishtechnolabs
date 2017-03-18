@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Admin CSS*/
+.breadcrumb-container {
+  font-size: 13px;
+}
+.breadcrumb-container ul {
+  margin: 9px 0 0 !important;
+  padding: 0 !important;
+  list-style:none;
+}
+.breadcrumb-container li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.breadcrumb-container ul li:last-child .separator:last-child {display:none;}
+
+
+.breadcrumbs{position:absolute;bottom:0;width:100%;max-width:1170px;left:-1px;background:#fff;right:0;margin:0 auto;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;
+padding:22px 50px 22px 53px;z-index:9;border-bottom:#ddd solid 1px;overflow:visible; height:80px;}
+.breadcrumbs .separator { color:#cccccc; padding:0 16px;}
+.breadcrumbs:after{background:#fff none repeat scroll 0 0;bottom:-51px;content:"";height:50px;left:0;position:absolute;width:100%}
+
+
+.breadcrumbs a{font-family:'Open Sans',sans-serif;font-size:14px;font-weight:400;color:#999;line-height:20px;text-transform:capitalize}
+.breadcrumbs a:hover{color:#ff5000;text-decoration:none}
+.breadcrumbs a:active{color:#ff5000;text-decoration:none}
+.breadcrumbs a:focus {color:#ff5000; text-decoration:none;}
+
+.breadcrumbs .dropdown-menu > li > a { padding:6px 20px;}
+.breadcrumbs .bootstrap-select.btn-group .dropdown-menu.inner { margin:0!important; text-align: left;
+    transform: inherit; background:none;}
+
+.breadcrumbs ul.leftsection { float:left;}
+.breadcrumbs ul.leftsection li { float:left;}
+.breadcrumbs ul.leftsection li:last-child a{ color:#ff5000;text-decoration:none; position:relative;}
+.breadcrumbs ul.leftsection li:last-child a:after{  color:#ff5000; content: "\e910" ; font-family: "icomoon"; position:absolute; right:-76px; top:1px; font-size:54px; }
+
+.breadcrumb-level-three-sub-pages-ul { float:right;}
+.breadcrumb-level-three-sub-pages-ul li{ float:left; font-size:14px;}
+.breadcrumb-level-three-sub-pages-ul li.active {color:#ff5000;text-decoration:none;}
+
+
+.breadcrumb-level-three-sub-pages-ul li a{ font-size:14px;}
+
+
+.btn-group.bootstrap-select .dropdown-toggle { font-size:14px; color:#ff5000!important;}
+.bootstrap-select > .dropdown-toggle { padding-left:10px; width:auto!important; float:right!important;}
+.btn-group.bootstrap-select  { float:right!important;}
+.btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info.focus:active, .btn-info:active:focus, .btn-info:active:hover, .open > .dropdown-toggle.btn-info.focus, .open > .dropdown-toggle.btn-info:focus, .open > .dropdown-toggle.btn-info:hover { background:#f2f2f2;}
+.bootstrap-select .dropdown-toggle:focus { outline:0 dotted #333333 !important;}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info { background:#f2f2f2!important;}
+
+
+
+
+
+

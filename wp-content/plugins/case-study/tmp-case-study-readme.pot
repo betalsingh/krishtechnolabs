@@ -1,0 +1,126 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "SVG Case Study"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "SVG Case Study is a simple WordPress plugin that provides a way to showcase case studies for your business."
+msgstr ""
+
+#. Screenshot description.
+msgid "Add screen for case study category."
+msgstr ""
+
+#. Screenshot description.
+msgid "Edit screen for case study post."
+msgstr ""
+
+#. Screenshot description.
+msgid "Default images for banner, list, slider and fields for headings."
+msgstr ""
+
+#. Screenshot description.
+msgid "Case study help screen to describe how to use shotcodes."
+msgstr ""
+
+#. Screenshot description.
+msgid "Add shortcodes in page."
+msgstr ""
+
+#. Screenshot description.
+msgid "Display slider of single post with thumbnails."
+msgstr ""
+
+#. Screenshot description.
+msgid "Listing of all case study post."
+msgstr ""
+
+#. Screenshot description.
+msgid "ID's of featured case study post."
+msgstr ""
+
+#. Screenshot description.
+msgid "Return url of banner image for given post ID."
+msgstr ""
+
+#. Found in description list item.
+msgid "SVG Supported"
+msgstr ""
+
+#. Found in description list item.
+msgid "Easy to install."
+msgstr ""
+
+#. Found in description list item.
+msgid "Easy to create portfolio of business."
+msgstr ""
+
+#. Found in description list item.
+msgid "Give better picturized view of products."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "We provide advance level of support for installation and customization at $10/hour."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"http://www.augustinfotech.com/contact-us/\">Click here</a>  for more information"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can add multiple images for each case study and also define problems and solution to them using additional fields provided."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "To display all case studies, add [CS_Case_List] in any page or template."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "To display specific case study, simply add [CS_Case_Post id=\"case study post ID\"] in any page or template. Slider can be with or without thumbnail."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "For retriving banner image url, add [CS_Case_Banner postid=\"case study post ID\" url=\"true\"] in any page or template."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "To fetch IDs' of featured case studies, use shortcode [CS_Featured] in any page or template."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Features:"
+msgstr ""
+
+#. Found in description paragraph, installation paragraph.
+msgid "Plugin Developed by August Infotech <a href=\"http://www.augustinfotech.com\">Visit website</a>"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the 'casestudy' folder to the '/wp-content/plugins/' directory."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin from the 'Plugins' menu of your WordPress admin panel."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Create category under Case Studies custom post type."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Create post under Case Studies custom post type."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Use shortcode."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "First version."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "= No Questions"
+msgstr ""
