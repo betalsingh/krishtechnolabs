@@ -551,9 +551,9 @@ add_filter( 'get_header_image_tag', 'twentyseventeen_header_image_tag', 10, 3 );
  */
 function twentyseventeen_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
 	if ( is_archive() || is_search() || is_home() ) {
-		$attr['sizes'] = '(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px';
+		$attr['sizes'] = '(max-width: 767px) 100vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px';
 	} else {
-		$attr['sizes'] = '100vw';
+		$attr['sizes'] = '120vw';
 	}
 
 	return $attr;

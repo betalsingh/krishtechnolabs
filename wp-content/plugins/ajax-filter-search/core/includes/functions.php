@@ -7,13 +7,13 @@ if (!function_exists('afs_page_navi')) {
 	function afs_page_navi( $args = array() ) {
 	
 		$defaults = array(
-			'range'           => 10,
-			'offset'			  => 0,
+			'range'           => 9,
+			'offset'		  => 0,
 			'custom_query'    => FALSE,
-			'previous_string' => __( '<i class="fa fa-angle-double-left"></i>', 'text-domain' ),
-			'next_string'     => __( '<i class="fa fa-angle-double-right"></i>', 'text-domain' ),
-			'before_output'   => '<div class="post-nav"><ul class="pagination pull-right">',
-			'after_output'    => '</ul></div>',
+			'previous_string' => __( 'Previous', 'text-domain' ),
+			'next_string'     => __( 'Next', 'text-domain' ),
+			'before_output'   => '<div class="row"><div class="post-nav"><ul class="pagination">',
+			'after_output'    => '</ul></div></div>',
 			'echo'			  => true
 		);    
 	
@@ -64,7 +64,7 @@ if (!function_exists('afs_page_navi')) {
 		if ( $firstpage && (1 != $page) )
 			//$echo .= '<li><a class="btn-default btn" href="' . $firstpage . '">' . __( 'First', 'text-domain' ) . '</a></li>';
 		if ( $previous && (1 != $page) )
-			$echo .= '<li><a class="btn-default btn" href="' . $previous . '" title="' . __( 'previous', 'text-domain') . '">' . $args['previous_string'] . '</a></li>';    
+			$echo .= '<li><a class="previous" href="' . $previous . '" title="' . __( 'previous', 'text-domain') . '">' . $args['previous_string'] . '</a></li>';    
 	
 		if ( !empty($min) && !empty($max) ) {
 			for( $i = $min; $i <= $max; $i++ ) {
@@ -80,7 +80,7 @@ if (!function_exists('afs_page_navi')) {
 		//$next = esc_attr( get_pagenum_link($next) );
 	
 		if ($next && ($count != $page) )
-			$echo .= '<li><a class="btn-default btn" href="' . $next . '" title="' . __( 'next', 'text-domain') . '">' . $args['next_string'] . '</a></li>';
+			$echo .= '<li><a class="next" href="' . $next . '" title="' . __( 'next', 'text-domain') . '">' . $args['next_string'] . '</a></li>';
 	
 		$lastpage = esc_attr( get_pagenum_link($count) );
 		if ( $lastpage ) {

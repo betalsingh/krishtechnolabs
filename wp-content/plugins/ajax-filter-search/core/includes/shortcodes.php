@@ -9,8 +9,8 @@ function ajax_filter_search($atts, $content = null) {
 		'post_tax' 				=> AFSAdmin::afs_retrieve('_general_post_taxonomy'),
 		'posts_per_page'		=> AFSAdmin::afs_retrieve('_general_posts_per_page'),
 		'filter_type'			=> '',
-		'filter_by' 				=> '',
-		'filter_months' 			=> '',
+		'filter_by' 			=> '',
+		'filter_months' 		=> '',
 		'filter_years' 			=> '',
 		'filter_withPDF' 		=> '',
 		'offset' 				=> 0,
@@ -43,12 +43,12 @@ function ajax_filter_search($atts, $content = null) {
 	Template Header
 	****************************/
 	$text .= '<div id="afs-wrapper">';
-	$text .= '	<div class="press-releases">';
-	$text .= '		<form id="newsForm">';
-	$text .= '			<div class="row">';
+	$text .= '<div class="press-releases">';
+	$text .= '<form id="newsForm">';
+	$text .= '';
 	
 	
-	$text .= '				<div class="col-xs-1TableRowItem2">';
+	$text .= '<div class="col-xs-1TableRowItem2">';
 	
 	/****************************
 	Top Tabs
@@ -59,9 +59,9 @@ function ajax_filter_search($atts, $content = null) {
 		if($taxonomy == 'none' || $taxonomy == '') {
 		} else {
                 
-			$text .= '					<div class="afs-Tabs col-xs-12">';
-			$text .= '						<ul class="hidden-xs visible-xs afs-CommonTabs">';
-			$text .= '							<li class="active"><a rel="'.$all.'" href="#">All</a></li>';
+			$text .= '<div class="blog-filter-Tabsbox">';
+			$text .= '<ul class="hidden-xs visible-xs afs-CommonTabs">';
+			$text .= '<li class="active"><a rel="'.$all.'" href="#">All</a></li>';
 						
 												$terms = get_terms($taxonomy, $args = array('orderby'=>'id')	);
 												if($terms) {
@@ -81,10 +81,10 @@ function ajax_filter_search($atts, $content = null) {
 			
 			$text .= '						<input type="hidden" name="filingType" />';
 			
-			$text .= '						<div class="form-group visible-xs1 col-xs-6" style="margin-left: -15px;">';
+			$text .= '						<div class="left-box-filter-blog visible-xs1">';
 			
 			$text .= '							<label for="category"><strong>Categories</strong></label>';
-			$text .= '							<select class="target" name="category1">';
+			$text .= '							<select class="selectpicker" name="category1">';
 			$text .= '								<option value="all">All</option>';
 													$terms = get_terms($taxonomy, $args = array('orderby'=>'id')	);
 													if($terms) {
@@ -103,10 +103,10 @@ function ajax_filter_search($atts, $content = null) {
 													}
 			$text .= '							</select>';
 			$text .= '						</div>';
-			$text .= '										<div class="form-group col-xs-6">';
-	$text .= '											<label for="archives"><strong>Archives:&nbsp;</strong></label>';
-	$text .= '												<select class="form-control1 target1" name="filterYears">';
-	$text .= '													<option value="">All Years</option>';
+			$text .= '										<div class="right-box-filter-blog">';
+			$text .= '											<label for="archives"><strong>Archives</strong></label>';
+			$text .= '												<select class="selectpicker" name="filterYears">';
+			$text .= '													<option value="">All Years</option>';
 										 						
 																$years = wp_get_archives(array('type'=>'monthly','echo'=>0, 'post_type' => $post_type));
 																//$years = wp_get_archives(array('type'=>'yearly','echo'=>0, 'post_type' => $post_type));
@@ -130,94 +130,11 @@ function ajax_filter_search($atts, $content = null) {
 		}
  	} 
 	
-	/****************************
-	Search Filters
-	****************************
-	$text .= '					<div class="afs-Filters col-xs-12">';
-	$text .= '						<div class="row">';
-	$text .= '							<div class="afs-FilterPanel1 col-xs-12 col-sm-12">';
-	$text .= '								<h5>Search</h5>';
-	$text .= '								<div class="">';
-	$text .= '									<div class="row rowtop">';
 	
-	$text .= '										<!-- SEARCH -->';
-	$text .= '										<div class="form-group-inline has-feedback">';
-	$text .= '											<div class="col-xs-12 col-sm-5">';
-	$text .= '												<input type="text" class="form-control" name="filterBy">';
-	$text .= '												<span class="fa fa-search form-control-feedback filterBy"></span>';
-	$text .= '											</div>';
-	$text .= '										</div>';
-	$text .= '										<!-- END SEARCH -->';
-											
-	$text .= '										<!-- FILTER: MONTHS -->';
-	$text .= '										<div class="form-group-inline">';
-	$text .= '											<div class="col-xs-12 col-sm-4">';
-	$text .= '												<select class="form-control" name="filterMonths">';
-	$text .= '													<option value="">All Months</option>';
-	$text .= '													<option value="1">January</option>';
-	$text .= '													<option value="2">February</option>';
-	$text .= '													<option value="3">March</option>';
-	$text .= '													<option value="4">April</option>';
-	$text .= '													<option value="5">May</option>';
-	$text .= '													<option value="6">June</option>';
-	$text .= '													<option value="7">July</option>';
-	$text .= '													<option value="8">August</option>';
-	$text .= '													<option value="9">September</option>';
-	$text .= '													<option value="10">October</option>';
-	$text .= '													<option value="11">November</option>';
-	$text .= '													<option value="12">December</option>';
-	$text .= '												</select>';
-	$text .= '											</div>';
-	$text .= '										</div>';
-	$text .= '										<!-- END FILTER: MONTHS -->';
-											
-	$text .= '										<!-- FILTER: YEARS -->';
-	$text .= '										<div class="form-group-inline">';
-	$text .= '											<div class="col-xs-12 col-sm-3">';
-	$text .= '												<select class="form-control" name="filterYears">';
-	$text .= '													<option value="">All Years</option>';
-										 						
-																$years = wp_get_archives(array('type'=>'monthly','echo'=>0, 'post_type' => $post_type));
-																//$years = wp_get_archives(array('type'=>'yearly','echo'=>0, 'post_type' => $post_type));
-																$years = explode( '</li>' , $years );
-																$years_array = array();
-																foreach( $years as $link ) {
-																	$link = str_replace( array( '<li>' , "\n" , "\t" , "\s" ), '' , $link );
-																	if( '' != $link )
-																		$years_array[] = $link;
-																	else
-																		continue;
-																}
-																foreach($years_array as $theyear) {
-																	$text .= '<option value="'.strip_tags($theyear).'">'.$theyear.'</option>';
-																}
-										
-	$text .= '												</select>';
-	$text .= '											</div>';
-	$text .= '										</div>';
-	$text .= '										<!-- END FILTER: YEARS -->';
-    $text .= '                   				</div>';
-    $text .= '                				</div>';
-
-    $text .= '       						<div class="row">';
-    $text .= '            						<div class="col-sm-12">';
-    $text .= '                						<div class="pull-right">';
-    $text .= '                   						<button type="button" id="updateBtn" class="btn btn-primary">Update</button>';
-	$text .= '											<button type="button" id="resetBtn" class="btn btn-default reset">Reset</button>';
-    $text .= '               						</div>';
-    $text .= '               						<div class="clearfix"></div>';
-    $text .= '                 					</div>';
-    $text .= '          						</div>';
-    $text .= '         					</div>';                            
-    $text .= '						</div>';
-    $text .= '					</div>';
-	
-    $text .= '				</div><!-- END .col-xs-1TableRowItem2 -->';
-    $text .= '				<div class="clearfix"></div>'; */
 				
 	if(AFSAdmin::afs_retrieve('_general_views') == 1) { 
             
-	$text .= '				<div id="newsViewOptionsPanel" class="afs-Switch col-xs-12" style="display: block;">';
+	$text .= '				<div id="newsViewOptionsPanel" class="afs-Switch" style="display: block;">';
 	$text .= '					<ul class="pull-right">';
 	$text .= '						<li><a rel="listPR" href="javascript:;"><span class="fa fa-list-ul"></span>&nbsp;List View</a></li>';
 	$text .= '						<li class="active"><a rel="gridPR" href="javascript:;"><span class="fa fa-th"></span>&nbsp;Grid View</a></li>';
@@ -226,20 +143,20 @@ function ajax_filter_search($atts, $content = null) {
 	
 	} else { 
             	
-    $text .= '        		<br />';
+    $text .= '        		';
 			
 	}
 	
 	/****************************
 	Begin Feed Area
 	****************************/
-	$text .= '				<div class="clearfix"></div>';
-	$text .= '				<div class="afs-Panel afs-Panel_all col-xs-12">';
+	$text .= '				';
+	$text .= '				<div class="afs-Panel afs-Panel_all">';
 	$text .= '					<div id="newsPanel" class="scroll">';
 	$text .= '						<div class="afs-TableWrapper gridPR" style="display: block;">';
-	$text .= '							<div class="row">';
+	$text .= '							';
 	
-	$text .= '								<div class="afs-Table col-xs-12" style="padding-left:0; padding-right:0;">';
+	$text .= '								<div class="afs-Table">';
 	
 	
 	
@@ -249,26 +166,26 @@ function ajax_filter_search($atts, $content = null) {
 	****************************/
 	$text .= '									<div id="newsPanelResults" class="jscroll-inner">';
 	$text .= '										[afs_feed '.$afs_args.']'; // <-- the shortcode
-	$text .= '										<div class="clearfix"></div>';
+	$text .= '										';
 	$text .= '									</div>';
-	$text .= '									<div class="clearfix"></div>';
+	$text .= '									';
 	$text .= '								</div>';
 	
 	/****************************
 	Close Feed Area
 	****************************/
-	$text .= '								<div class="clearfix"></div>';
-	$text .= '							</div>';
+	$text .= '								';
+	$text .= '							';
 	$text .= '						</div>';
 	$text .= '					</div>';
 	$text .= '				</div>';
-	$text .= '				<div class="clearfix"></div>';
+	$text .= '				';
 	
 	
 	/****************************
 	Template Footer
 	****************************/
-    $text .= '        	</div>';
+    $text .= '        	';
     $text .= '    	</form>';
 	$text .= '	</div>';
 	$text .= '</div>';
@@ -287,8 +204,8 @@ function afs_feed($atts, $content = null) {
 		'post_tax' 				=> AFSAdmin::afs_retrieve('_general_post_taxonomy'),
 		'posts_per_page'		=> AFSAdmin::afs_retrieve('_general_posts_per_page'),
 		'filter_type' 			=> '',
-		'filter_by' 				=> '',
-		'filter_months' 			=> '',
+		'filter_by' 			=> '',
+		'filter_months' 		=> '',
 		'filter_years' 			=> '',
 		'filter_withPDF' 		=> '',
 		'offset' 				=> 0,
@@ -385,18 +302,13 @@ function afs_feed($atts, $content = null) {
 		} 
 
 			// Pagination
-			$text .= '<div class="row">';
-			$text .= '	<div class="col-xs-12">';
-			$text .= '		Displaying '.$current_post_position.' to <span id="pageLastRecord">'.$posts_per_page.'</span> (of <span id="recordCount">'.$total_count.'</span>)';
-			$text .= '	</div>';
-			$text .= '	<div class="clearfix"></div>';
-			$text .= '</div>';
+			
 
-			$text .= '<div class="row">';
+			$text .= '';
 			$text .= '	 <div class="col-md-12">';
 			$text .= 		afs_page_navi( array('echo' => false, 'custom_query' => $query, 'offset' => $offset_pag));
 			$text .= '	</div>';
-			$text .= '</div>';
+			$text .= '';
 
 	} else {
 

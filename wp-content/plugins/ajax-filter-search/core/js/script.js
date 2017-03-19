@@ -64,7 +64,7 @@
 				n = $('.post-nav ul a.btn-primary').attr('href');
 			} 
 			
-			parseInt(n, 10);
+			parseInt(n, 9);
 			submitForm(n);
 			return false;
 			

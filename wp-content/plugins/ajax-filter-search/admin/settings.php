@@ -32,7 +32,7 @@ if( !class_exists('AFSAdmin') ) :
 										array(
 											'field_name' 		=> '_posts_per_page',
 											'field_description' => 'How many posts to display per page.',
-											'default'			=> 10
+											'default'			=> 9
 										),
 										array(
 											'field_name' 		=> '_show_filters',

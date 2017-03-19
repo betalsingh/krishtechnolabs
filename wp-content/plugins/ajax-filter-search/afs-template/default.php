@@ -8,7 +8,7 @@ if(FILTER_TYPE == '') {
 ?>
 
 
-	<div class="col-sm-10">
+	<div class="blog-list-inner-box">
 		<h6>
 			<?php 
 			if(AFSAdmin::afs_retrieve('_general_post_taxonomy') != '' && AFSAdmin::afs_retrieve('_general_post_taxonomy') != 'none') {
@@ -37,15 +37,17 @@ if(FILTER_TYPE == '') {
 			?>
 		</h6>
 		<?php the_post_thumbnail('medium' ); ?>
+		<div class="blog-list-inner-textbox">
 		<div class="prDateRow">
-      		<div class="afs-PRDate"><?php echo get_the_time('j F Y'); ?></div>
+      		<?php echo get_the_time('j F Y'); ?>
       	</div>
+		
 		<h4><a href="<?php echo get_the_permalink(); ?>" class="afs-GaLabel afs-EventTracking afs-GaHasFile" data-GaFID="<?php echo get_the_ID(); ?>"><?php echo get_the_title(); ?></a></h4>
  		
    		<div class="afs-PRTools">
         	<?php 
-				$summary = get_the_selected_excerpt(200); 
-				if(get_the_selected_excerpt(200) == '') {
+				$summary = get_the_selected_excerpt(130); 
+				if(get_the_selected_excerpt(130) == '') {
 				} else {
 			?>
      		
@@ -55,7 +57,7 @@ if(FILTER_TYPE == '') {
 
  		<div class="afs-PRSummary afs-Hidden">
 			<p><?php echo $summary; ?>...</p>
-   				<a href="<?php echo get_the_permalink(); ?>" class="afs-EventTracking afs-GaHasTitle" data-GaTitle="HTM"><span class="fa fa-chevron-right"></span>&nbsp;Continue Reading</a>
+   				<a href="<?php echo get_the_permalink(); ?>" class="afs-EventTracking afs-GaHasTitle" data-GaTitle="HTM">Continue reading...</a>
       	</div>
-    	
+    	</div>
 </div>
