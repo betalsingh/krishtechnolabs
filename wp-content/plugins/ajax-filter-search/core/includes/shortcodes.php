@@ -84,7 +84,7 @@ function ajax_filter_search($atts, $content = null) {
 			$text .= '						<div class="left-box-filter-blog visible-xs1">';
 			
 			$text .= '							<label for="category"><strong>Categories</strong></label>';
-			$text .= '							<select class="selectpicker" name="category1">';
+			$text .= '							<select class="target selectpicker" name="category1">';
 			$text .= '								<option value="all">All</option>';
 													$terms = get_terms($taxonomy, $args = array('orderby'=>'id')	);
 													if($terms) {
@@ -105,7 +105,7 @@ function ajax_filter_search($atts, $content = null) {
 			$text .= '						</div>';
 			$text .= '										<div class="right-box-filter-blog">';
 			$text .= '											<label for="archives"><strong>Archives</strong></label>';
-			$text .= '												<select class="selectpicker" name="filterYears">';
+			$text .= '												<select class="form-control1 target1 selectpicker" name="filterYears">';
 			$text .= '													<option value="">All Years</option>';
 										 						
 																$years = wp_get_archives(array('type'=>'monthly','echo'=>0, 'post_type' => $post_type));
